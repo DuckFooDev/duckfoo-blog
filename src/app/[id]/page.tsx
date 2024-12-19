@@ -2,7 +2,6 @@
 import Image from 'next/image'
 import { Clock } from 'lucide-react'
 import { notFound } from 'next/navigation'
-import { LikeButton } from './like-button'
 import { posts } from "../posts/posts"
 import MarkdownPreview from '@uiw/react-markdown-preview';
 
@@ -44,9 +43,6 @@ export default function BlogPost({ params }: Props) {
             />
           </div>
             <MarkdownPreview source={post.content} style={{background: "transparent"}}/>
-          <div className="flex justify-center p-4">
-            <LikeButton postId={post.id} initialLikes={post.likes} />
-          </div>
         </div>
       </article>
     </div>
