@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 export function Footer() {
   return (
     <footer className="border-t bg-purple-100/95 dark:bg-[#1A0826]/95 backdrop-blur supports-[backdrop-filter]:bg-purple-100/60 dark:supports-[backdrop-filter]:bg-[#1A0826]/60">
