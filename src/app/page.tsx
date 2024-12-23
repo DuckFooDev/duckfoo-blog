@@ -12,7 +12,7 @@ export default function BlogPage() {
         {Object.values(posts).map((post) => (
           <Link
             key={post.id}
-            href={`/${post.id}`}
+            href={`/post/${post.id}`}
             className="group rounded-2xl border bg-purple-200/80 dark:bg-[#1A0826] p-8 transition-colors hover:bg-purple-300/80 dark:hover:bg-[#2A0D3D]"
           >
             <div className="relative h-48 mb-6 rounded-xl overflow-hidden">
