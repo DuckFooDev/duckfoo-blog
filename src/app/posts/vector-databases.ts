@@ -19,7 +19,7 @@ export const vectorDatabasesPost: BlogPost = {
         openGraph: {
             title: 'What is a Vector Database? A Complete Guide (2025)',
             description: 'A deep dive into vector databases, embeddings, and AI-powered similarity search. Learn about PostgreSQL pgvector, Pinecone, Milvus, and more.',
-            url: 'https://www.duckfoo.dev/blog/vector-databases',
+            url: 'https://blog.duckfoo.dev/post/vector-databases',
             type: 'article',
             images: [
                 {
