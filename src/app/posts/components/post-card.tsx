@@ -9,7 +9,7 @@ const PostCard = ({post}: {post: BlogPost}) => {
     <Link
             key={post.id}
             href={`/post/${post.id}`}
-            className="group rounded-2xl border border-purple-900 bg-purple-200/80 dark:bg-[#1A0826] p-8 transition-colors hover:bg-purple-300/80 dark:hover:bg-[#2A0D3D]"
+            className="group hover:shadow-lg hover:shadow-black rounded-2xl border border-purple-900 bg-purple-200/80 dark:bg-[#1A0826] p-8 transition-colors hover:bg-purple-300/80 dark:hover:bg-[#2A0D3D]"
           >
             <div className="relative h-48 mb-6 rounded-xl overflow-hidden">
               <Image
