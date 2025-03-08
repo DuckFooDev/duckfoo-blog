@@ -1,16 +1,15 @@
-"use client"
 import Image from 'next/image'
 import { Clock } from 'lucide-react'
 import { notFound } from 'next/navigation'
 import { posts } from "../../posts/posts"
-import MarkdownPreview from '@uiw/react-markdown-preview';
-
-
+import MarkdownRenderer from '@/app/posts/components/markdown-renderer';
 
 interface Props {
-  params: {
-    id: string
-  }
+  params: { id: string };
+}
+
+export function generateStaticParams() {
+  return Object.keys(posts).map((id) => ({ id }));
 }
 
 export default function BlogPost({ params }: Props) {
@@ -20,7 +19,6 @@ export default function BlogPost({ params }: Props) {
     notFound()
   }
 
-  console.log(post)
 
   return (
     <div className="container mx-auto py-8">
@@ -42,7 +40,7 @@ export default function BlogPost({ params }: Props) {
               className="object-cover"
             />
           </div>
-            <MarkdownPreview source={post.content} style={{background: "transparent"}}/>
+          <MarkdownRenderer content={post.content} />
         </div>
       </article>
     </div>
