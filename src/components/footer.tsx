@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="border-t bg-purple-100/95 dark:bg-[#1A0826]/95 backdrop-blur supports-[backdrop-filter]:bg-purple-100/60 dark:supports-[backdrop-filter]:bg-[#1A0826]/60">
+    <footer className="border-t border-purple-900 bg-purple-100/95 dark:bg-[#1A0826]/95 backdrop-blur supports-[backdrop-filter]:bg-purple-100/60 dark:supports-[backdrop-filter]:bg-[#1A0826]/60">
       <div className="px-4 sm:px-6 lg:px-8 py-8">
       <p className="text-sm text-purple-900/90 dark:text-purple-100/90 text-center">
             © {new Date().getFullYear()} DuckFoo. All rights reserved.

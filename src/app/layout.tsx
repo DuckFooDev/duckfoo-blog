@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`min-h-screen bg-purple-50 dark:bg-[#0F0014] text-foreground ${inter.className}`}>
+      <body className={`min-h-screen bg-purple-50 dark:bg-[#280e37] text-foreground ${inter.className}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
