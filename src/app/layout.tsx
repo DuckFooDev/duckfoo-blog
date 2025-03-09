@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google'
 import { ThemeProvider } from "@/components/theme-provider"
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import "./globals.css"
@@ -53,6 +54,7 @@ export default function RootLayout({
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       </head>
       <body className={`min-h-screen bg-purple-50 dark:bg-[#280e37] text-foreground ${inter.className}`}>
+        <GoogleAnalytics gaId={process.env.GA_MEASUREMENT_ID || ""} />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
