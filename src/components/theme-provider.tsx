@@ -5,6 +5,6 @@ import { ThemeProvider as NextThemesProvider, ThemeProviderProps } from "next-th
 
 
 export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
-  return <NextThemesProvider {...props}>{children}</NextThemesProvider>
+  return <NextThemesProvider forcedTheme="dark" {...props}>{children}</NextThemesProvider>
 }
 

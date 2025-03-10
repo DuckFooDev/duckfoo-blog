@@ -3,6 +3,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import Head from 'next/head'
 import "./globals.css"
 
 const inter = Inter({ subsets: ['latin'] })
@@ -49,16 +50,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-            <head>
+    <html lang="en" className="dark" suppressHydrationWarning>
+      <Head>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-      </head>
+      </Head>
       <body className={`min-h-screen bg-purple-50 dark:bg-[#280e37] text-foreground ${inter.className}`}>
         <GoogleAnalytics gaId={process.env.GA_MEASUREMENT_ID || ""} />
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          themes={['dark']}
+          defaultTheme="dark"
           disableTransitionOnChange
         >
           <div className="relative min-h-screen flex flex-col">
@@ -73,4 +74,3 @@ export default function RootLayout({
     </html>
   )
 }
-

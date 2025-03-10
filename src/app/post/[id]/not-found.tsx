@@ -7,7 +7,7 @@ export default function NotFound() {
       <p className="text-muted-foreground mb-8">Could not find the requested blog post.</p>
       <Link 
         href="/"
-        className="inline-flex h-10 items-center justify-center rounded-md bg-yellow-400 px-8 text-sm font-medium text-purple-900 shadow transition-colors hover:bg-yellow-500"
+        className="inline-flex h-10 items-center justify-center rounded-md bg-yellow-400 px-8 text-sm font-medium text-[var(--accent-color)] shadow transition-colors hover:bg-yellow-500"
       >
         Back to Blog
       </Link>

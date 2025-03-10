@@ -16,7 +16,7 @@ export function Header() {
         </Link>
       </div>
 
-      <div className=" group flex justify-center items-center underline-offset-4 whitespace-nowrap bg-[var(--duckfoo-yellow)] font-semibold text-purple-900 px-2 py-1 rounded-md">
+      <div className=" group flex justify-center items-center underline-offset-4 whitespace-nowrap bg-[var(--duckfoo-yellow)] font-semibold text-[var(--accent-color)] px-2 py-1 rounded-md">
         <Link href="https://www.duckfoo.dev">Go to Website</Link> <ArrowRight className="w-4 h-4 ml-2 mr-2 group-hover:translate-x-2 transition-transform" />
 
       </div>

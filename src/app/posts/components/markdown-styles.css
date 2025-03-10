@@ -1,0 +1,16 @@
+
+
+.markdown {
+    color: #EEEEEE !important;
+    background-color: transparent !important;
+}
+
+.markdown h2, .markdown h1 {
+    color: #EEEEEE !important;
+    border-bottom: 1px var(--accent-color) solid !important;
+}
+
+.markdown hr {
+    background-color: var(--accent-color)  !important;
+    border-color: var(--accent-color)  !important;
+}

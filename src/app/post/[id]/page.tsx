@@ -31,7 +31,7 @@ export default function BlogPost({ params }: Props) {
               {post.readingTime}
             </span>
           </div>
-          <h1 className="text-4xl font-bold mb-8 text-purple-950 dark:text-white">{post.title}</h1>
+          <h1 className="text-4xl font-bold mb-8 text-white">{post.title}</h1>
           <div className="relative h-[400px] mb-8 rounded-xl overflow-hidden">
             <Image
               src={post.image}
